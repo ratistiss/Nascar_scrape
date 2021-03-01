@@ -1,1 +1,3 @@
-run.py
+from controller import app
+
+app.run()
