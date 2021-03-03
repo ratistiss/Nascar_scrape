@@ -15,8 +15,11 @@ header = container.h3.text
 
 video = container.findAll('a', {'class': 'title-link'})
 
+captions = []
+
 for videos in video:
     caption = videos.text
+    captions.append(caption.strip())
     url = videos['href']
     print(caption)
     print(url)
@@ -36,8 +39,11 @@ test"""
 html = f"""\
 <html>
   <body>
-    {caption}
-    {url}
+    <div style="display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;">
+        {captions}
+    </div>
   </body>
 </html>
 """
