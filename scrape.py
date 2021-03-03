@@ -26,24 +26,18 @@ receiver_email = "manderson3600@gmail.com"
 password = input("Type your password and press enter:")
 
 message = MIMEMultipart("alternative")
-message["Subject"] = "multipart test"
+message["Subject"] = "Hi Hun"
 message["From"] = sender_email
 message["To"] = receiver_email
 
 
 text = """\
-Hi,
-How are you?
-Real Python has many great tutorials:
-www.realpython.com"""
-html = """\
+test"""
+html = f"""\
 <html>
   <body>
-    <p>Hi,<br>
-       How are you?<br>
-       <a href="http://www.realpython.com">Real Python</a> 
-       has many great tutorials.
-    </p>
+    {caption}
+    {url}
   </body>
 </html>
 """
