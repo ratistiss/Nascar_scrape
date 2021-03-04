@@ -16,11 +16,13 @@ header = container.h3.text
 video = container.findAll('a', {'class': 'title-link'})
 
 captions = []
+urls = []
 
 for videos in video:
     caption = videos.text
     captions.append(caption.strip())
     url = videos['href']
+    urls.append(url)
     print(caption)
     print(url)
 
@@ -29,7 +31,7 @@ receiver_email = "manderson3600@gmail.com"
 password = input("Type your password and press enter:")
 
 message = MIMEMultipart("alternative")
-message["Subject"] = "Hi Hun"
+message["Subject"] = "Nascar news today"
 message["From"] = sender_email
 message["To"] = receiver_email
 
@@ -42,7 +44,22 @@ html = f"""\
     <div style="display: flex;
         justify-content: space-between;
         flex-wrap: wrap;">
-        {captions}
+        <div>
+            <h4>{captions[0]}</h4>
+            <h6 href={urls[0]}>Video Link</h6>
+        </div>
+        <div>
+            <h4>{captions[1]}</h4>
+            <h6 href={urls[1]}>Video Link</h6>
+        </div>
+        <div>
+            <h4>{captions[2]}</h4>
+            <h6 href={urls[2]}>Video Link</h6>
+        </div>
+        <div>
+            <h4>{captions[3]}</h4>
+            <h6 href={urls[3]}>Video Link</h6>
+        </div>
     </div>
   </body>
 </html>
