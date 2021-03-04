@@ -41,22 +41,23 @@ test"""
 html = f"""\
 <html>
   <body>
+    <div>{header}</div>
     <div style="display: flex;
         justify-content: space-between;
         flex-wrap: wrap; padding:5px;">
-        <div>
+        <div style="border-right: 1px solid gray;text-align: center;padding:5px;">
             <h4>{captions[0]}</h4>
             <a href="{urls[0]}">Video Link</a>
         </div>
-        <div>
+        <div style="border-right: 1px solid gray;text-align: center;padding:5px;">
             <h4>{captions[1]}</h4>
             <a href="{urls[1]}">Video Link</a>
         </div>
-        <div>
+        <div style="border-right: 1px solid gray;text-align: center;padding:5px;">
             <h4>{captions[2]}</h4>
             <a href="{urls[2]}">Video Link</a>
         </div>
-        <div>
+        <div style="text-align: center;padding:5px;">
             <h4>{captions[3]}</h4>
             <a href="{urls[3]}">Video Link</a>
         </div>
