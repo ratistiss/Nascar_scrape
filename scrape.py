@@ -43,22 +43,22 @@ html = f"""\
   <body>
     <div style="display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;">
+        flex-wrap: wrap; padding:5px;">
         <div>
             <h4>{captions[0]}</h4>
-            <h6 href={urls[0]}>Video Link</h6>
+            <a href="{urls[0]}">Video Link</a>
         </div>
         <div>
             <h4>{captions[1]}</h4>
-            <h6 href={urls[1]}>Video Link</h6>
+            <a href="{urls[1]}">Video Link</a>
         </div>
         <div>
             <h4>{captions[2]}</h4>
-            <h6 href={urls[2]}>Video Link</h6>
+            <a href="{urls[2]}">Video Link</a>
         </div>
         <div>
             <h4>{captions[3]}</h4>
-            <h6 href={urls[3]}>Video Link</h6>
+            <a href="{urls[3]}">Video Link</a>
         </div>
     </div>
   </body>
