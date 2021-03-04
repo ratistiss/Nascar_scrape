@@ -23,8 +23,6 @@ for videos in video:
     captions.append(caption.strip())
     url = videos['href']
     urls.append(url)
-    print(caption)
-    print(url)
 
 sender_email = "testmydev206@gmail.com"
 receiver_email = "manderson3600@gmail.com"
