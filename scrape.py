@@ -37,7 +37,7 @@ message["To"] = receiver_email
 text = """\
 test"""
 html = f"""\
-<html>
+<html>.
   <body>
     <div>{header}</div>
     <div style="display: flex;
