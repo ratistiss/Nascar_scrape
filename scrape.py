@@ -24,8 +24,8 @@ for videos in video:
     url = videos['href']
     urls.append(url)
 
-sender_email = "testmydev206@gmail.com"
-receiver_email = "manderson3600@gmail.com"
+sender_email = "email address for sender here"
+receiver_email = "email address for receiver here"
 password = input("Type your password and press enter:")
 
 message = MIMEMultipart("alternative")
