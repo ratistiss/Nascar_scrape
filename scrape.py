@@ -35,7 +35,7 @@ message["To"] = receiver_email
 
 
 text = """\
-test"""
+error"""
 html = f"""\
 <html>.
   <body>
