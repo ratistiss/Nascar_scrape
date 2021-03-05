@@ -21,5 +21,5 @@
 ## Additional improvements that can be added
 <ul>
     <li>Add a Scheduler to run it</li>
-    <li>Pull additional assets from other Nascar Series,/li>
+    <li>Pull additional assets from other Nascar Series./li>
 </ul>
