@@ -14,7 +14,7 @@
 ## To use
 <ol>
     <li>Change sender and reciever emails in script</li>
-    <li>Change Sneders Gmail setting to allow "Access to less secure apps"</li>
+    <li>Change senders Gmail setting to allow "Access to less secure apps"</li>
 </ol>
 
 
